@@ -1,0 +1,16 @@
+Algoritmo PromedioCalificaciones
+    Definir calificacion1, calificacion2, calificacion3, promedio Como Real
+
+    Escribir "Ingrese la primera calificación (0 a 10): "
+    Leer calificacion1
+
+    Escribir "Ingrese la segunda calificación (0 a 10): "
+    Leer calificacion2
+
+    Escribir "Ingrese la tercera calificación (0 a 10): "
+    Leer calificacion3
+
+    promedio <- (calificacion1 + calificacion2 + calificacion3) / 3
+
+    Escribir "El promedio de las calificaciones es: ", promedio
+FinAlgoritmo
