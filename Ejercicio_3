@@ -1,0 +1,25 @@
+Algoritmo PromedioTemperaturas
+//defino las 5 variables y leo las temperaturas por teclado
+
+    Definir temperatura1, temperatura2, temperatura3, temperatura4, temperatura5, promedio Como Real
+
+    Escribir "Ingrese la temperatura 1: "
+    Leer temperatura1
+
+    Escribir "Ingrese la temperatura 2: "
+    Leer temperatura2
+
+    Escribir "Ingrese la temperatura 3: "
+    Leer temperatura3
+
+    Escribir "Ingrese la temperatura 4: "
+    Leer temperatura4
+
+    Escribir "Ingrese la temperatura 5: "
+    Leer temperatura5
+
+//calculo e imprimo el promedio :b
+    promedio <- (temperatura1 + temperatura2 + temperatura3 + temperatura4 + temperatura5) / 5
+
+    Escribir "El promedio de las temperaturas es: ", promedio
+FinAlgoritmo
