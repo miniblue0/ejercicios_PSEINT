@@ -1,0 +1,21 @@
+Algoritmo CambioDeValores
+    Definir var1, var2, temp Como Real
+
+    var1 <- 5.5
+    var2 <- 10.2
+
+    // imprimo los valores originales 
+    Escribir "Antes del intercambio:"
+    Escribir "variable1: ", var1
+    Escribir "variable2: ", var2
+
+    // cambio los valores usando temp (variable temporal)
+    temp <- var1
+    var1 <- var2
+    var2 <- temp
+
+    // imprimo los valores después del cambio 
+    Escribir "Después del intercambio:"
+    Escribir "variable1: ", var1
+    Escribir "variable2: ", var2
+FinAlgoritmo
