@@ -1,0 +1,51 @@
+Algoritmo EntradaCine
+    Definir clasePelicula Como Caracter
+    Definir horario Como Caracter
+    Definir precio Como Real
+    Definir descuento Como Real
+    Definir montoTotal Como Real
+
+    // leo por teclado la clasede película y horario
+    Escribir "Ingrese la clase de película (A, B, C): "
+    Leer clasePelicula
+
+    Escribir "Ingrese el horario (normal o reducido): "
+    Leer horario
+
+    // verifico el precio y el descuento según clase de película y horario
+    Segun tipoPelicula Hacer
+        "A":
+            Si horario = "normal" Entonces
+                precio <- 1200
+                descuento <- 0
+            Sino
+                precio <- 1000
+                descuento <- 0.20
+            FinSi
+        "B":
+            Si horario = "normal" Entonces
+                precio <- 1500
+                descuento <- 0
+            Sino
+                precio <- 1300
+                descuento <- 0.133
+            FinSi
+        "C":
+            Si horario = "normal" Entonces
+                precio <- 1800
+                descuento <- 0
+            Sino
+                precio <- 1800
+                descuento <- 0
+            FinSi
+    FinSegun
+
+    // calculo el precio total
+
+    montoTotal <- precio * (1 - descuento)
+
+    // imprimo la.clase de película y el precio final
+
+    Escribir "clase de película: ", clasePelicula
+    Escribir "Monto total de la entrada: ", montoTotal
+FinAlgoritmo
