@@ -1,0 +1,11 @@
+Algoritmo BucleCincoEnCinco
+    Definir numero Como Entero
+
+    numero <- 100
+
+    // hago un bucle para aumentar en 5 hasta 150
+    Mientras numero <= 150 Hacer
+        Escribir numero
+        numero <- numero + 5
+    FinMientras
+FinAlgoritmo
