@@ -1,4 +1,5 @@
 Algoritmo PromedioCalificaciones
+//defino las 3 variables y leo las calificaciones por tecladp
     Definir calificacion1, calificacion2, calificacion3, promedio Como Real
 
     Escribir "Ingrese la primera calificación (0 a 10): "
@@ -9,7 +10,7 @@ Algoritmo PromedioCalificaciones
 
     Escribir "Ingrese la tercera calificación (0 a 10): "
     Leer calificacion3
-
+//calculo e imprimo el promedio de calificaciones 
     promedio <- (calificacion1 + calificacion2 + calificacion3) / 3
 
     Escribir "El promedio de las calificaciones es: ", promedio
