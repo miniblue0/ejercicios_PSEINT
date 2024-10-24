@@ -1,0 +1,24 @@
+Proceso menorTiempoRespuesta
+    Definir numParticipante Como Entero
+    Definir tiempo, menorTiempo Como Real
+    Definir participanteMenor Como Entero
+
+    //inicializo *menorTiempo* en negativo
+    menorTiempo <- 99999  // Un número mayor a cualquier tiempo razonable
+
+    //itero para leer el numero y tiempo de los 10 participantes
+    Para i Desde 1 Hasta 10 Hacer
+        Escribir "Ingrese el número del participante ", i, ": "
+        Leer numParticipante
+        Escribir "Ingrese el tiempo en minutos del participante ", numParticipante, ": "
+        Leer tiempo
+    //comparo los tiempos de los jugadores con *menorTiempo*
+        Si tiempo < menorTiempo Entonces
+            menorTiempo <- tiempo
+            participanteMenor <- numParticipante
+        Fin Si
+    Fin Para
+
+    //imprimo el participante con el menor tiempo y su tiempo
+    Escribir "El participante con el menor tiempo es el número ", participanteMenor, " con un tiempo de ", menorTiempo, " minutos."
+Fin Proceso
