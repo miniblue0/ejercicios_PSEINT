@@ -1,0 +1,25 @@
+Proceso LlenarDiagonalSecundaria
+    Definir matriz[6][6] Como Entero
+    Definir i, j Como Entero
+
+    //icinializo la matriz
+    Para i Desde 0 Hasta 5 Hacer
+        Para j Desde 0 Hasta 5 Hacer
+            matriz[i][j] <- 0
+        Fin Para
+    Fin Para
+
+    //pongo unos en la diagonal
+    Para i Desde 0 Hasta 5 Hacer
+        matriz[i][5 - i] <- 1
+    Fin Para
+
+    //imprimo la matriz
+    Escribir "La matriz es:"
+    Para i Desde 0 Hasta 5 Hacer
+        Para j Desde 0 Hasta 5 Hacer
+            Escribir Sin Saltar matriz[i][j], " "
+        Fin Para
+        Escribir ""  //dejo un vacio para para la siguiente linea
+    Fin Para
+Fin Proceso
