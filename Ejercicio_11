@@ -1,0 +1,28 @@
+Proceso contarNumeros
+    Definir valores[6] Como Real
+    Definir i Como Entero
+    Definir cantPositivos, cantNegativos Como Entero
+
+    // Inicializar los contadores
+    cantPositivos <- 0
+    cantNegativos <- 0
+
+    //leo y cargo el vector
+    Para i Desde 0 Hasta 5 Hacer
+        Escribir "Ingrese el número ", i + 1, ": "
+        Leer valores[i]
+    Fin Para
+
+    //itero el vector y cuanto los positivos y negativos
+    Para i Desde 0 Hasta 5 Hacer
+        Si valores[i] > 0 Entonces
+            cantPositivos <- cantPositivos + 1
+        Sino Si valores[i] < 0 Entonces
+            cantNegativos <- cantNegativos + 1
+        Fin Si
+    Fin Para
+
+    //imprimo los totales de positivos y negativos
+    Escribir "Total de números positivos: ", cantPositivos
+    Escribir "Total de números negativos: ", cantNegativos
+Fin Proceso
