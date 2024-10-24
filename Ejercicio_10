@@ -1,0 +1,41 @@
+Proceso buscarFrutaEnMatriz
+    Definir matriz[4][4] Como Caracter
+    Definir frutaBuscada Como Caracter
+    Definir encontrado Como Booleano
+    Definir fila, columna Como Entero
+
+    //leo las frutas que voy a insertar en la matriz
+    Para i Desde 0 Hasta 3 Hacer
+        Para j Desde 0 Hasta 3 Hacer
+            Escribir "Ingrese el nombre de la fruta para la posición [", i + 1, ", ", j + 1, "]: "
+            Leer matriz[i][j]
+        Fin Para
+    Fin Para
+
+    //leo la fruta a buscar
+    Escribir "Ingrese el nombre de la fruta a buscar: "
+    Leer frutaBuscada
+
+    //actualizo las variables para buscar
+    encontrado <- Falso
+    fila <- -1
+    columna <- -1
+
+    //itero sobre lamatriz verificando si encontre la fruta
+    Para i Desde 0 Hasta 3 Hacer
+        Para j Desde 0 Hasta 3 Hacer
+            Si matriz[i][j] = frutaBuscada Entonces
+                encontrado <- Verdadero
+                fila <- i + 1  //guardo la fila
+                columna <- j + 1  // guardo la columna
+            Fin Si
+        Fin Para
+    Fin Para
+
+    //imprimo si encontre o no la fruta
+    Si encontrado Entonces
+        Escribir "La fruta se encuentra en la fila ", fila, ", columna ", columna
+    Sino
+        Escribir "La fruta ", frutaBuscada, " no se encuentra en la matriz."
+    Fin Si
+Fin Proceso
