@@ -1,0 +1,51 @@
+Proceso calcularCostoLibros
+    Definir tipoLibro Como Entero
+    Definir costoTotal Como Real
+    Definir precioNovela Como Real
+    Definir precioLibroTexto Como Real
+    Definir precioRevista Como Real
+
+//declaro los precios de la novela, libro de texto y revissta 
+    precioNovela <- 15.0
+    precioLibroTexto <- 20.0
+    precioRevista <- 10.0   
+
+    costoTotal <- 0.0
+
+    //leo el tipo de libro
+    Escribir "Ingrese el número que representa el tipo de libro:"
+    Escribir "1. Novelas"
+    Escribir "2. Libros de texto"
+    Escribir "3. Revistas"
+    Escribir "4. Novelas y libros de texto"
+    Escribir "5. Todos los tipos de libros"
+    Escribir "6. Novelas y revistas"
+    Escribir "7. Libros de texto y revistas"
+    Leer tipoLibro
+
+    //evaluo segun el tipo de libro y sumo el precio total
+    Segun tipoLibro Hacer
+        1:
+            costoTotal <- precioNovela
+        2:
+            costoTotal <- precioLibroTexto
+        3:
+            costoTotal <- precioRevista
+        4:
+            costoTotal <- precioNovela + precioLibroTexto
+        5:
+            costoTotal <- precioNovela + precioLibroTexto + precioRevista
+        6:
+            costoTotal <- precioNovela + precioRevista
+        7:
+            costoTotal <- precioLibroTexto + precioRevista
+        De Otro Modo:
+            Escribir "Opción no válida."
+            costoTotal <- 0  //si se ingresa algo invalido, el costo es 0
+    Fin Segun
+
+    //imprimo el costo total
+    Si costoTotal > 0 Entonces
+        Escribir "El costo total de su compra es: ", costoTotal
+    Fin Si
+Fin Proceso
