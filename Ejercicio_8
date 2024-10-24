@@ -1,0 +1,26 @@
+Proceso encontrarMenor
+    Definir numeros[6] Como Entero
+    Definir menor Como Entero
+    Definir posicion Como Entero
+
+    //cargo el vector
+    Para i Desde 0 Hasta 5 Hacer
+        Escribir "Ingrese el número ", i + 1, ": "
+        Leer numeros[i]
+    Fin Para
+
+    //inicio la variable *menor* con el primer valor y *posicion* con la primera posicion
+    menor <- numeros[0]
+    posicion <- 0
+
+    //itero en el vector comparando las posiciones y reasignando el menor
+    Para i Desde 1 Hasta 5 Hacer
+        Si numeros[i] < menor Entonces
+            menor <- numeros[i]
+            posicion <- i
+        Fin Si
+    Fin Para
+
+    //imprimo el menor y la posicion
+    Escribir "El número menor es ", menor, " en la posición ", posicion
+Fin Proceso
