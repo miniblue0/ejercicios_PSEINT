@@ -1,0 +1,13 @@
+Proceso datosUsuario
+    Definir nombre Como Caracter
+    Definir altura Como Real
+
+    //leo nombre de usuario y altura
+    Escribir "Ingrese su nombre completo: "
+    Leer nombre
+    Escribir "Ingrese su altura en metros: "
+    Leer altura
+
+    // Mostrar el mensaje final
+    Escribir "Hola ", nombre, ". Tu altura es ", altura, " metros."
+Fin Proceso
